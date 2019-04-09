@@ -39,7 +39,7 @@ public class PhysicalLayer
   String frame = null;
   
   try {
-    if(medium.pollReceive()) {
+    if(medium.poll()) {
     frame = medium.read();
     }
     if(frame != null){ 
